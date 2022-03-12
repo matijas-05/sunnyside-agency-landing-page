@@ -10,8 +10,12 @@
 :root {
 	--clr-white: #fff;
 	--clr-strong-text: hsl(212, 27%, 19%);
-	background-color: red;
+	--clr-weak-text: hsl(232, 10%, 55%);
+	--clr-underline-yellow: hsl(51, 100%, 49%);
+	--clr-underline-soft-red: hsl(7, 99%, 70%);
+
 	scroll-behavior: smooth;
+	font-size: 18px;
 }
 
 header {
@@ -33,8 +37,8 @@ nav {
 	margin-right: auto;
 }
 .nav-item {
-	font-family: "Barlow";
-	font-size: 1rem;
+	font-family: "Barlow", sans-serif;
+	font-size: .9rem;
 	text-decoration: none;
 	text-align: center;
 	color: var(--clr-white);
@@ -44,7 +48,7 @@ nav {
 	text-decoration: underline;
 }
 .nav-item--btn {
-	font-family: "Fraunces";
+	font-family: "Fraunces", serif;
 	font-weight: 700;
 	color: var(--clr-strong-text);
 	background-color: var(--clr-white);
@@ -59,11 +63,73 @@ nav {
 	align-items: center;
 }
 #hero > h1 {
-	font-family: "Fraunces";
-	font-size: 3.5rem;
+	font-family: "Fraunces", serif;
+	font-size: 3rem;
 	font-weight: 900;
 	letter-spacing: .2em;
 	text-align: center;
 	margin-bottom: 2em;
 	color: var(--clr-white);
+}
+
+/* ABOUT */
+#about {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.about__desc {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 7.5em
+}
+.about__desc > *:not(:last-child) {
+	margin-bottom: 1.5rem;
+}
+.about__desc > h2 {
+	font-family: "Fraunces", serif;
+	font-weight: 900;
+	font-size: 2.25rem;
+	color: var(--clr-strong-text);
+}
+.about__desc > p {
+	font-family: "Barlow", sans-serif;
+	font-size: 1rem;
+	line-height: 1.5em;
+	color: var(--clr-weak-text);
+}
+.about__img {
+	width: 100%;
+}
+.a-thick-u {
+	width: fit-content;
+}
+.a-thick-u > a {
+	font-family: "Fraunces", serif;
+	font-weight: 900;
+	font-size: .8rem;
+	text-decoration: none;
+	letter-spacing: .1ch;
+	color: var(--clr-strong-text);
+
+	margin-top:   .5em;
+	margin-right: .5em;
+	margin-left:  .5em;
+}
+.a-thick-u > div {
+	position: relative; /* Make z-index work */
+	filter: opacity(0.25);
+	height: .5em;
+	border-radius: 1em;
+	transform: translateY(-75%);
+	z-index: -1;
+}
+.a-thick-u > a:hover ~ div {
+	filter: opacity(1);
+}
+.a-thick-u__yellow {
+	background-color: var(--clr-underline-yellow);
+}
+.a-thick-u__soft-red {
+	background-color: var(--clr-underline-soft-red);
 }
