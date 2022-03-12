@@ -121,7 +121,7 @@ nav {
 	filter: opacity(0.25);
 	height: .5em;
 	border-radius: 1em;
-	transform: translateY(-75%);
+	transform: translateY(-85%);
 	z-index: -1;
 }
 .a-thick-u > a:hover ~ div {
