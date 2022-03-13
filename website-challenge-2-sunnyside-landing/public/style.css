@@ -180,24 +180,24 @@ nav {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	margin: 10em 5em;
+	margin: 8em;
 }
 #clients > h4 {
 	color: var(--clr-text-grayish-blue);
 	font-size: 1.1rem;
 	letter-spacing: .4ch;
-	margin-bottom: 5em;
+	margin-bottom: 4em;
 }
 #clients > div {
 	display: flex;
 	justify-content: center;
-	column-gap: 3em;
+	column-gap: 2em;
 }
 .clients__client {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 3em;
+	row-gap: 4em;
 }
 .clients__client > img {
 	width: 4em;
