@@ -41,7 +41,7 @@ p {
 	line-height: 3ch;
 }
 img {
-	width: fit-content;
+	width: 100%;
 }
 
 /* NAVBAR */
@@ -214,3 +214,10 @@ nav {
 	font-size: .75rem;
 	color: var(--clr-text-grayish-blue);
 }
+
+/* GALLERY */
+#gallery {
+	display: flex;
+}
+
+/* FOOTER */
