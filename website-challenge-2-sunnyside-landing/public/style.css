@@ -10,10 +10,13 @@
 :root {
 	--clr-white: white;
 	--clr-navbtn-hover-bg: rgba(255, 255, 255, 0.25);
-	--clr-strong-text: hsl(212, 27%, 19%);
-	--clr-weak-text: hsl(232, 10%, 55%);
-	--clr-underline-yellow: hsl(51, 100%, 49%);
-	--clr-underline-soft-red: hsl(7, 99%, 70%);
+
+	--clr-text-700: hsl(232, 10%, 55%);
+	--clr-text-900: hsl(212, 27%, 19%);
+	--clr-primary-yellow: hsl(51, 100%, 49%);
+	--clr-primary-soft-red: hsl(7, 99%, 70%);
+	--clr-primary-dark-desaturated-cyan: hsl(167, 40%, 24%);
+	--clr-primary-dark-blue: hsl(198, 62%, 26%);
 
 	scroll-behavior: smooth;
 	font-size: 18px;
@@ -24,6 +27,15 @@ header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	aspect-ratio: 9/5;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Fraunces", serif;
+	font-weight: 900;
+}
+p {
+	font-family: "Barlow", sans-serif;
+	font-size: 1rem;
+	line-height: 1.5em;
 }
 
 /* NAVBAR */
@@ -48,7 +60,7 @@ nav {
 .nav-item--btn {
 	font-family: "Fraunces", serif;
 	font-weight: 700;
-	color: var(--clr-strong-text);
+	color: var(--clr-text-900);
 	background-color: var(--clr-white);
 	padding: 1em 1.75em;
 	border-radius: 2em;
@@ -66,9 +78,7 @@ nav {
 	align-items: center;
 }
 #hero > h1 {
-	font-family: "Fraunces", serif;
 	font-size: 3rem;
-	font-weight: 900;
 	letter-spacing: .2em;
 	text-align: center;
 	margin-bottom: 2em;
@@ -90,16 +100,11 @@ nav {
 	margin-bottom: 1.5rem;
 }
 .about__desc > h2 {
-	font-family: "Fraunces", serif;
-	font-weight: 900;
 	font-size: 2.25rem;
-	color: var(--clr-strong-text);
+	color: var(--clr-text-900);
 }
 .about__desc > p {
-	font-family: "Barlow", sans-serif;
-	font-size: 1rem;
-	line-height: 1.5em;
-	color: var(--clr-weak-text);
+	color: var(--clr-text-700);
 }
 .about__img {
 	width: 100%;
@@ -113,11 +118,11 @@ nav {
 	font-size: .8rem;
 	text-decoration: none;
 	letter-spacing: .1ch;
-	color: var(--clr-strong-text);
+	color: var(--clr-text-900);
 
-	margin-top:   .5em;
-	margin-right: .5em;
-	margin-left:  .5em;
+	padding-top:   .5em;
+	padding-right: .5em;
+	padding-left:  .5em;
 }
 .a-thick-u > div {
 	position: relative; /* Make z-index work */
@@ -131,8 +136,36 @@ nav {
 	filter: opacity(1);
 }
 .a-thick-u__yellow {
-	background-color: var(--clr-underline-yellow);
+	background-color: var(--clr-primary-yellow);
 }
 .a-thick-u__soft-red {
-	background-color: var(--clr-underline-soft-red);
+	background-color: var(--clr-primary-soft-red);
+}
+#about__design {
+	background-image: url(./images/desktop/image-graphic-design.jpg);
+	color: var(--clr-primary-dark-desaturated-cyan);
+}
+#about__photography {
+	background-image: url(./images/desktop/image-photography.jpg);
+	color: var(--clr-primary-dark-blue)
+}
+.about__mission {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 5em;
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	aspect-ratio: 6/5;
+}
+.about__mission > h3 {
+	font-size: 1.5rem;
+	text-align: center;
+	margin-bottom: 1em;
+}
+.about__mission > p {
+	text-align: center;
+	padding: 0 4em;
 }
