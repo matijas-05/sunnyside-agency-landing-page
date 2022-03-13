@@ -11,12 +11,15 @@
 	--clr-white: white;
 	--clr-navbtn-hover-bg: rgba(255, 255, 255, 0.25);
 
-	--clr-text-700: hsl(232, 10%, 55%);
-	--clr-text-900: hsl(212, 27%, 19%);
 	--clr-primary-yellow: hsl(51, 100%, 49%);
 	--clr-primary-soft-red: hsl(7, 99%, 70%);
 	--clr-primary-dark-desaturated-cyan: hsl(167, 40%, 24%);
 	--clr-primary-dark-blue: hsl(198, 62%, 26%);
+	
+	--clr-text-700: hsl(232, 10%, 55%);
+	--clr-text-900: hsl(212, 27%, 19%);
+	--clr-text-grayish-blue: hsl(210, 4%, 67%);
+	--clr-text-very-dark-grayish-blue: hsl(213, 9%, 39%);
 
 	scroll-behavior: smooth;
 	font-size: 18px;
@@ -35,7 +38,10 @@ h1, h2, h3, h4, h5, h6 {
 p {
 	font-family: "Barlow", sans-serif;
 	font-size: 1rem;
-	line-height: 1.5em;
+	line-height: 3ch;
+}
+img {
+	width: fit-content;
 }
 
 /* NAVBAR */
@@ -79,7 +85,7 @@ nav {
 }
 #hero > h1 {
 	font-size: 3rem;
-	letter-spacing: .2em;
+	letter-spacing: .3ch;
 	text-align: center;
 	margin-bottom: 2em;
 	color: var(--clr-white);
@@ -94,10 +100,8 @@ nav {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	gap: 1.5em;
 	padding: 7.5em
-}
-.about__desc > *:not(:last-child) {
-	margin-bottom: 1.5rem;
 }
 .about__desc > h2 {
 	font-size: 2.25rem;
@@ -161,11 +165,52 @@ nav {
 	aspect-ratio: 6/5;
 }
 .about__mission > h3 {
-	font-size: 1.5rem;
+	font-size: 1.75rem;
 	text-align: center;
 	margin-bottom: 1em;
 }
 .about__mission > p {
 	text-align: center;
 	padding: 0 4em;
+}
+
+/* CLIENTS */
+#clients {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 10em 5em;
+}
+#clients > h4 {
+	color: var(--clr-text-grayish-blue);
+	font-size: 1.1rem;
+	letter-spacing: .4ch;
+	margin-bottom: 5em;
+}
+#clients > div {
+	display: flex;
+	justify-content: center;
+	column-gap: 3em;
+}
+.clients__client {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3em;
+}
+.clients__client > img {
+	width: 4em;
+	border-radius: 50%;
+}
+.clients__client > p {
+	color: var(--clr-text-very-dark-grayish-blue);
+}
+.clients__client__signature > h4 {
+	color: var(--clr-text-900);
+	margin-bottom: .5em;
+}
+.clients__client__signature > p {
+	font-size: .75rem;
+	color: var(--clr-text-grayish-blue);
 }
