@@ -1,0 +1,43 @@
+@use "variables" as v;
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+}
+:root {
+	scroll-behavior: smooth;
+	font-size: 18px;
+}
+
+header {
+	background-image: url(/images/desktop/image-header.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	aspect-ratio: 9/5;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Fraunces", serif;
+	font-weight: 900;
+}
+p {
+	font-family: "Barlow", sans-serif;
+	font-size: 1rem;
+	line-height: 3ch;
+}
+a {
+	font-family: "Barlow", sans-serif;
+	font-size: 1rem;
+	text-decoration: none;
+	transition: color v.$transition-time ease-in-out, filter v.$transition-time ease-in-out;
+
+	&::after {
+		transition: filter v.$transition-time ease-in-out;
+	}
+}
+img {
+	max-width: 100%;
+}

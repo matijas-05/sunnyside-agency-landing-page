@@ -1,0 +1,46 @@
+@use "../variables" as v;
+
+/* CLIENTS */
+#clients {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 8em;
+
+	> h4 {
+		color: v.$clr-text-grayish-blue;
+		font-size: 1.1rem;
+		letter-spacing: .4ch;
+		margin-bottom: 4em;
+	}
+	> div {
+		display: flex;
+		justify-content: center;
+		column-gap: 2em;
+	}
+
+}
+.clients__client {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 4em;
+
+	> img {
+		width: 4em;
+		border-radius: 50%;
+	}
+	> p {
+		color: v.$clr-text-very-dark-grayish-blue;
+	}
+	
+	&__signature > h4 {
+		color: v.$clr-text-900;
+		margin-bottom: .5em;
+	}
+	&__signature > p {
+		font-size: .75rem;
+		color: v.$clr-text-grayish-blue;
+	}
+}

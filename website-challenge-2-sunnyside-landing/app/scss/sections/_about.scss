@@ -1,0 +1,55 @@
+@use "../variables" as v;
+
+/* ABOUT */
+#about {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.about__desc {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1.5em;
+	padding: 7.5em;
+
+	> h2 {
+		font-size: 2.25rem;
+		color: v.$clr-text-900;
+	}
+	> p {
+		color: v.$clr-text-700;
+	}
+}
+.about__img {
+	width: 100%;
+}
+
+#about__design {
+	background-image: url(/images/desktop/image-graphic-design.jpg);
+	color: v.$clr-primary-dark-desaturated-cyan;
+}
+#about__photography {
+	background-image: url(/images/desktop/image-photography.jpg);
+	color: v.$clr-primary-dark-blue;
+}
+.about__mission {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 5em;
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	aspect-ratio: 6/5;
+
+	> h3 {
+		font-size: 1.75rem;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	> p {
+		text-align: center;
+		padding: 0 4em;
+	}
+}

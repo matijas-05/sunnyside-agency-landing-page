@@ -1,0 +1,58 @@
+@use "variables" as v;
+
+// Thick underline anchor
+.a-thick-u {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	font-family: "Fraunces", serif;
+	font-weight: 900;
+	font-size: .8rem;
+	text-decoration: none;
+	letter-spacing: .1ch;
+	color: v.$clr-text-900;
+	width: fit-content;
+
+	padding-top:   .5em;
+	padding-right: .5em;
+	padding-left:  .5em;
+
+	&::after {
+		content: "";
+		position: relative; // Make z-index work
+		width: 110%;
+		height: .65em;
+		border-radius: 1em;
+		filter: opacity(0.25);
+		transform: translateY(-80%);
+		z-index: -1;
+	}
+	&:hover::after {
+		filter: opacity(1);
+	}
+
+	// Modifiers
+	&--yellow::after {
+		background-color: v.$clr-primary-yellow;
+	}
+	&--soft-red::after {
+		background-color: v.$clr-primary-soft-red;
+	}
+}
+
+// Button anchor
+.btn {
+	font-family: "Fraunces", serif;
+	font-weight: 700;
+	color: v.$clr-text-900;
+	background-color: v.$clr-white;
+	padding: 1em 1.75em;
+	border-radius: 2em;
+
+	&:hover {
+		color: v.$clr-white;
+		background-color: v.$clr-navbtn-hover-bg;
+		text-decoration: none;
+	}
+}
