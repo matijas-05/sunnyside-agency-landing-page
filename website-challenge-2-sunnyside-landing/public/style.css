@@ -9,7 +9,7 @@
 }
 :root {
 	--clr-white: white;
-	--clr-navbtn-hover-bg: rgba(255, 255, 255, 0.25);
+	--clr-navbtn-hover-bg: rgba(255, 255, 255, 0.3);
 
 	--clr-primary-yellow: hsl(51, 100%, 49%);
 	--clr-primary-soft-red: hsl(7, 99%, 70%);
@@ -22,6 +22,8 @@
 	--clr-text-900: hsl(212, 27%, 19%);
 	--clr-text-grayish-blue: hsl(210, 4%, 67%);
 	--clr-text-very-dark-grayish-blue: hsl(213, 9%, 39%);
+
+	--transition-time: 200ms;
 
 	scroll-behavior: smooth;
 	font-size: 18px;
@@ -46,6 +48,12 @@ a {
 	font-family: "Barlow", sans-serif;
 	font-size: 1rem;
 	text-decoration: none;
+}
+a {
+	transition: color var(--transition-time) ease-in-out, filter var(--transition-time) ease-in-out;
+}
+a::after {
+	transition: filter var(--transition-time) ease-in-out;
 }
 img {
 	max-width: 100%;
@@ -135,7 +143,6 @@ nav {
 }
 .a-thick-u::after {
 	content: "";
-	display: inline-block;
 	position: relative; 	/* Make z-index work */
 	width: 110%;
 	height: .65em;
