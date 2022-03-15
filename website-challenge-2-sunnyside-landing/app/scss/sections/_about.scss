@@ -1,9 +1,13 @@
 @use "../variables" as v;
+@use "../mixins" as m;
 
-/* ABOUT */
+// ABOUT
 #about {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	@include m.breakpoint-down("about") {
+		grid-template-columns: 1fr;
+	}
 }
 .about__desc {
 	display: flex;
@@ -13,24 +17,57 @@
 	padding: min(7.5vw, 7.5em);
 
 	> h2 {
-		font-size: 2.75rem;
+		font-size: 2.5rem;
 		color: v.$clr-text-900;
+		
+		@include m.breakpoint-down("about") {
+			font-size: 2.25rem;
+		}
 	}
 	> p {
 		color: v.$clr-text-700;
+	}
+
+	@include m.breakpoint-down("about") {
+		align-items: center;
+		text-align: center;
+		padding-top: 4em;
+		padding-bottom: 4em;
 	}
 }
 .about__img {
 	width: 100%;
 }
+.img-pc {
+	display: block;
+	@include m.breakpoint-down("about") {
+		display: none;
+	}
+}
+.img-mobile {
+	display: none;
+	@include m.breakpoint-down("about") {
+		display: block;
+	}
+}
 
+// MISSION
 #about__design {
 	background-image: url(/images/desktop/image-graphic-design.jpg);
+	background-size: contain;
 	color: v.$clr-primary-dark-desaturated-cyan;
+	
+	@include m.breakpoint-down("about") {
+		background-image: url(/images/mobile/image-graphic-design.jpg);
+	}
 }
 #about__photography {
 	background-image: url(/images/desktop/image-photography.jpg);
 	color: v.$clr-primary-dark-blue;
+
+	@include m.breakpoint-down("about") {
+		background-image: url(/images/mobile/image-photography.jpg);
+	}
 }
 .about__mission {
 	display: flex;
@@ -42,6 +79,10 @@
 	background-size: contain;
 	aspect-ratio: 6/5;
 
+	@include m.breakpoint-down("about") {
+		aspect-ratio: 5/8;
+	}
+
 	> h3 {
 		font-size: 2rem;
 		text-align: center;
@@ -49,7 +90,7 @@
 	}
 	> p {
 		text-align: center;
-		padding: 0 8em;
+		padding: 0 10vw;
 		margin-bottom: 3em;
 	}
 }

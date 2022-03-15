@@ -1,0 +1,18 @@
+$breakpoints-down: (
+	"pc": 90rem,				// 1440px
+	"about": 75rem,				// 1200px
+	"hamburger": 46.875rem,		// 750px
+	"gallery": 39.0625rem,		// 625px
+	"hero": 31.25rem,			// 500px
+	"mobile": 23.4375rem);		// 375px
+
+@mixin breakpoint-down($breakpoint) {
+	@media (max-width: map-get($breakpoints-down, $breakpoint)) {
+		@content;
+	}
+}
+@mixin breakpoint-up($breakpoint) {
+	@media (min-width: map-get($breakpoints-down, $breakpoint)) {
+		@content;
+	}
+}

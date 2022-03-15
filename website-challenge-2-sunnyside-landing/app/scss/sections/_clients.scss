@@ -1,4 +1,5 @@
 @use "../variables" as v;
+@use "../mixins" as m;
 
 /* CLIENTS */
 #clients {
@@ -6,8 +7,8 @@
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	margin: 8em;
-
+	padding: 8em;
+	
 	> h4 {
 		color: v.$clr-text-grayish-blue;
 		font-size: 1.25rem;
@@ -18,6 +19,15 @@
 		display: flex;
 		justify-content: center;
 		gap: 2em;
+		
+		@include m.breakpoint-down("hamburger") {
+			flex-direction: column;
+			gap: 4em;
+		}
+	}
+
+	@include m.breakpoint-down("hamburger") {
+		padding: 4em 2em;
 	}
 }
 .clients__client {
@@ -42,5 +52,6 @@
 	&__signature > p {
 		font-size: 0.85rem;
 		color: v.$clr-text-grayish-blue;
+		margin-bottom: 2em;
 	}
 }
