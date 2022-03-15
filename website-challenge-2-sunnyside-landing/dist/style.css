@@ -55,7 +55,7 @@ nav {
   justify-content: flex-end;
   align-items: center;
   padding: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
   gap: 2em;
 }
 
@@ -94,23 +94,27 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 6vw;
 }
 #hero > h1 {
   font-size: 3rem;
   letter-spacing: 0.3ch;
   text-align: center;
   padding: 0 1em;
-  margin-bottom: 2em;
   color: white;
 }
 @media (max-width: 31.25em) {
   #hero > h1 {
     font-size: 10vw;
-    margin-bottom: 1em;
   }
 }
 #hero > a {
   margin-bottom: 5em;
+}
+@media (max-width: 31.25em) {
+  #hero > a {
+    width: 8vw;
+  }
 }
 
 /* ABOUT */
