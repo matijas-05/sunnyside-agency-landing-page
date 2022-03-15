@@ -10,7 +10,7 @@
 
 	> h4 {
 		color: v.$clr-text-grayish-blue;
-		font-size: 1.1rem;
+		font-size: 1.25rem;
 		letter-spacing: 0.4ch;
 		margin-bottom: 4em;
 	}
@@ -27,7 +27,7 @@
 	gap: 4em;
 
 	> img {
-		width: 4em;
+		width: 5em;
 		border-radius: 50%;
 	}
 	> p {
@@ -35,11 +35,12 @@
 	}
 
 	&__signature > h4 {
+		font-size: 1.125rem;
 		color: v.$clr-text-900;
 		margin-bottom: 0.5em;
 	}
 	&__signature > p {
-		font-size: 0.75rem;
+		font-size: 0.85rem;
 		color: v.$clr-text-grayish-blue;
 	}
 }

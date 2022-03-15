@@ -56,12 +56,12 @@ nav {
 	align-items: center;
 	gap: 7.5vw;
 
-	@media (max-width: 43.75em) {
+	@media (max-width: 43.75em) {	// 700px
 		gap: 12vw;
 	}
 
 	> h1 {
-		font-size: 3rem;
+		font-size: 3.4rem;
 		letter-spacing: 0.3ch;
 		text-align: center;
 		padding: 0 1em;

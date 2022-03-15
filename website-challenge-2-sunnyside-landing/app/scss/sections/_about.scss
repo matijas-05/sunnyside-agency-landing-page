@@ -13,7 +13,7 @@
 	padding: min(7.5vw, 7.5em);
 
 	> h2 {
-		font-size: 2.25rem;
+		font-size: 2.75rem;
 		color: v.$clr-text-900;
 	}
 	> p {
@@ -43,12 +43,13 @@
 	aspect-ratio: 6/5;
 
 	> h3 {
-		font-size: 1.75rem;
+		font-size: 2rem;
 		text-align: center;
 		margin-bottom: 1em;
 	}
 	> p {
 		text-align: center;
-		padding: 0 4em;
+		padding: 0 8em;
+		margin-bottom: 3em;
 	}
 }

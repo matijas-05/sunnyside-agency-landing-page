@@ -8,8 +8,10 @@
 }
 
 :root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   scroll-behavior: smooth;
-  font-size: 18px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -19,13 +21,13 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-family: "Barlow", sans-serif;
-  font-size: 1rem;
+  font-size: 1.125rem;
   line-height: 3ch;
 }
 
 a {
   font-family: "Barlow", sans-serif;
-  font-size: 1rem;
+  font-size: 1.125rem;
   text-decoration: none;
   transition: color 200ms ease-in-out, filter 200ms ease-in-out;
 }
@@ -35,6 +37,11 @@ a::after {
 
 img {
   max-width: 100%;
+}
+
+#container {
+  max-width: 1440px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
 }
 
 header {
@@ -102,7 +109,7 @@ nav {
   }
 }
 #hero > h1 {
-  font-size: 3rem;
+  font-size: 3.4rem;
   letter-spacing: 0.3ch;
   text-align: center;
   padding: 0 1em;
@@ -136,7 +143,7 @@ nav {
   padding: min(7.5vw, 7.5em);
 }
 .about__desc > h2 {
-  font-size: 2.25rem;
+  font-size: 2.75rem;
   color: #23303e;
 }
 .about__desc > p {
@@ -167,13 +174,14 @@ nav {
   aspect-ratio: 6/5;
 }
 .about__mission > h3 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   text-align: center;
   margin-bottom: 1em;
 }
 .about__mission > p {
   text-align: center;
-  padding: 0 4em;
+  padding: 0 8em;
+  margin-bottom: 3em;
 }
 
 /* CLIENTS */
@@ -186,7 +194,7 @@ nav {
 }
 #clients > h4 {
   color: #a7abae;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   letter-spacing: 0.4ch;
   margin-bottom: 4em;
 }
@@ -203,18 +211,19 @@ nav {
   gap: 4em;
 }
 .clients__client > img {
-  width: 4em;
+  width: 5em;
   border-radius: 50%;
 }
 .clients__client > p {
   color: #5a636c;
 }
 .clients__client__signature > h4 {
+  font-size: 1.125rem;
   color: #23303e;
   margin-bottom: 0.5em;
 }
 .clients__client__signature > p {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: #a7abae;
 }
 
@@ -264,7 +273,7 @@ footer > img {
   align-items: center;
   font-family: "Fraunces", serif;
   font-weight: 900;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-decoration: none;
   letter-spacing: 0.1ch;
   color: #23303e;
