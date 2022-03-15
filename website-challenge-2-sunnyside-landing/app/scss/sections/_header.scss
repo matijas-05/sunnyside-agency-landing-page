@@ -1,20 +1,55 @@
 @use "../variables" as v;
 
+header {
+	background: url(/images/desktop/image-header.jpg) no-repeat center;
+	background-size: cover;
+	aspect-ratio: 9/5;
+
+	@media (max-width: 31.25em) {
+		// 700px
+		aspect-ratio: 0;
+		min-height: 27.78em;
+		background-image: url(/images/mobile/image-header.jpg);
+	}
+}
+
 // NAVBAR
 nav {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	padding: 2em;
-	margin-bottom: 4em;
-
+	margin-bottom: 2em;
+	gap: 2em;
 }
 .nav-item {
 	color: v.$clr-white;
-	margin-left: 2em;
+
+	@media (max-width: 43.75em) {
+		// 700px
+		display: none;
+	}
 }
 #logo {
 	margin-right: auto;
+	transform: translateY(10%);
+}
+#hamburger {
+	display: none;
+	width: 2em;
+	height: 2em;
+	background: url(/images/icon-hamburger.svg) no-repeat center;
+	background-size: contain;
+	border: 0;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	@media (max-width: 43.75em) {
+		// 700px
+		display: block;
+	}
 }
 
 // HERO
@@ -25,9 +60,19 @@ nav {
 
 	> h1 {
 		font-size: 3rem;
-		letter-spacing: .3ch;
+		letter-spacing: 0.3ch;
 		text-align: center;
+		padding: 0 1em;
 		margin-bottom: 2em;
 		color: v.$clr-white;
+
+		@media (max-width: 31.25em) {
+			// 500px
+			font-size: 10vw;
+			margin-bottom: 1em;
+		}
+	}
+	> a {
+		margin-bottom: 5em;
 	}
 }

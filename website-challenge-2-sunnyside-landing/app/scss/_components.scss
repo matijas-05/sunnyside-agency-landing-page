@@ -8,21 +8,21 @@
 
 	font-family: "Fraunces", serif;
 	font-weight: 900;
-	font-size: .8rem;
+	font-size: 0.8rem;
 	text-decoration: none;
-	letter-spacing: .1ch;
+	letter-spacing: 0.1ch;
 	color: v.$clr-text-900;
 	width: fit-content;
 
-	padding-top:   .5em;
-	padding-right: .5em;
-	padding-left:  .5em;
+	padding-top: 0.5em;
+	padding-right: 0.5em;
+	padding-left: 0.5em;
 
 	&::after {
 		content: "";
 		position: relative; // Make z-index work
 		width: 110%;
-		height: .65em;
+		height: 0.65em;
 		border-radius: 1em;
 		filter: opacity(0.25);
 		transform: translateY(-80%);

@@ -11,21 +11,20 @@
 	> h4 {
 		color: v.$clr-text-grayish-blue;
 		font-size: 1.1rem;
-		letter-spacing: .4ch;
+		letter-spacing: 0.4ch;
 		margin-bottom: 4em;
 	}
 	> div {
 		display: flex;
 		justify-content: center;
-		column-gap: 2em;
+		gap: 2em;
 	}
-
 }
 .clients__client {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	row-gap: 4em;
+	gap: 4em;
 
 	> img {
 		width: 4em;
@@ -34,13 +33,13 @@
 	> p {
 		color: v.$clr-text-very-dark-grayish-blue;
 	}
-	
+
 	&__signature > h4 {
 		color: v.$clr-text-900;
-		margin-bottom: .5em;
+		margin-bottom: 0.5em;
 	}
 	&__signature > p {
-		font-size: .75rem;
+		font-size: 0.75rem;
 		color: v.$clr-text-grayish-blue;
 	}
 }

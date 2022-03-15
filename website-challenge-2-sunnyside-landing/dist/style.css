@@ -12,13 +12,6 @@
   font-size: 18px;
 }
 
-header {
-  background-image: url(/images/desktop/image-header.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  aspect-ratio: 9/5;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "Fraunces", serif;
   font-weight: 900;
@@ -44,21 +37,57 @@ img {
   max-width: 100%;
 }
 
+header {
+  background: url(/images/desktop/image-header.jpg) no-repeat center;
+  background-size: cover;
+  aspect-ratio: 9/5;
+}
+@media (max-width: 31.25em) {
+  header {
+    aspect-ratio: 0;
+    min-height: 27.78em;
+    background-image: url(/images/mobile/image-header.jpg);
+  }
+}
+
 nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 2em;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
+  gap: 2em;
 }
 
 .nav-item {
   color: white;
-  margin-left: 2em;
+}
+@media (max-width: 43.75em) {
+  .nav-item {
+    display: none;
+  }
 }
 
 #logo {
   margin-right: auto;
+  transform: translateY(10%);
+}
+
+#hamburger {
+  display: none;
+  width: 2em;
+  height: 2em;
+  background: url(/images/icon-hamburger.svg) no-repeat center;
+  background-size: contain;
+  border: 0;
+}
+#hamburger:hover {
+  cursor: pointer;
+}
+@media (max-width: 43.75em) {
+  #hamburger {
+    display: block;
+  }
 }
 
 #hero {
@@ -70,8 +99,18 @@ nav {
   font-size: 3rem;
   letter-spacing: 0.3ch;
   text-align: center;
+  padding: 0 1em;
   margin-bottom: 2em;
   color: white;
+}
+@media (max-width: 31.25em) {
+  #hero > h1 {
+    font-size: 10vw;
+    margin-bottom: 1em;
+  }
+}
+#hero > a {
+  margin-bottom: 5em;
 }
 
 /* ABOUT */
@@ -85,7 +124,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   gap: 1.5em;
-  padding: 7.5em;
+  padding: min(7.5vw, 7.5em);
 }
 .about__desc > h2 {
   font-size: 2.25rem;
@@ -114,9 +153,8 @@ nav {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  padding: 5em;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   aspect-ratio: 6/5;
 }
 .about__mission > h3 {
@@ -146,15 +184,14 @@ nav {
 #clients > div {
   display: flex;
   justify-content: center;
-  -moz-column-gap: 2em;
-       column-gap: 2em;
+  gap: 2em;
 }
 
 .clients__client {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 4em;
+  gap: 4em;
 }
 .clients__client > img {
   width: 4em;
@@ -191,8 +228,7 @@ footer > img {
 #footer__links {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  -moz-column-gap: 3em;
-       column-gap: 3em;
+  gap: 3em;
 }
 #footer__links > a {
   color: #458c7e;
@@ -205,8 +241,7 @@ footer > img {
 #footer__social {
   display: flex;
   align-items: center;
-  -moz-column-gap: 1.5em;
-       column-gap: 1.5em;
+  gap: 1.5em;
   margin-top: 4em;
   margin-bottom: 3em;
 }
