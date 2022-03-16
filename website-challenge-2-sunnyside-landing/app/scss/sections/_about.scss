@@ -17,7 +17,7 @@
 	padding: 7.5vw;
 
 	@include m.breakpoint-down("about-padding") {
-		padding: 3.5vw;
+		padding: 2.9vw;
 	}
 	@include m.breakpoint-down("about") {
 		align-items: center;
