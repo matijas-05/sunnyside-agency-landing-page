@@ -2,14 +2,14 @@
 @use "../mixins" as m;
 
 header {
-	background: url(/website-challenges/images/desktop/image-header.jpg) no-repeat center;
+	background: url(website-challenges/images/desktop/image-header.jpg) no-repeat center;
 	background-size: cover;
 	aspect-ratio: 9/5;
 
 	@include m.breakpoint-down("hero") {
 		aspect-ratio: 0;
 		min-height: 27.78em;
-		background-image: url(/website-challenges/images/mobile/image-header.jpg);
+		background-image: url(website-challenges/images/mobile/image-header.jpg);
 	}
 }
 
@@ -37,7 +37,7 @@ nav {
 	display: none;
 	width: 2em;
 	height: 2em;
-	background: url(/website-challenges/images/icon-hamburger.svg) no-repeat center;
+	background: url(website-challenges/images/icon-hamburger.svg) no-repeat center;
 	background-size: contain;
 	border: 0;
 
