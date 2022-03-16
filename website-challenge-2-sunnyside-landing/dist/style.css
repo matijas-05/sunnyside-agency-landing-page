@@ -111,7 +111,7 @@ nav {
   width: 82.94vw;
   background-color: white;
   color: #818498;
-  transition: opacity 100ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 @media (min-width: 46.875rem) {
   .mobile-nav {
@@ -126,7 +126,7 @@ nav {
   }
 }
 .mobile-nav .mobile-nav__item {
-  cursor: pointer;
+  color: #818498;
 }
 
 .mobile-nav::before {
@@ -137,13 +137,14 @@ nav {
   width: 1.75em;
   height: 1.75em;
   background-color: white;
-  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0);
-          clip-path: polygon(0 100%, 100% 100%, 100% 0);
+  -webkit-clip-path: polygon(0 100%, 101% 100%, 100% 0);
+          clip-path: polygon(0 100%, 101% 100%, 100% 0);
   transform: translateY(-100%);
 }
 
 .mobile-nav--closed {
   opacity: 0;
+  z-index: -1;
 }
 
 #hero {
@@ -536,4 +537,8 @@ footer > img {
 
 .mobile-btn {
   background-color: #fad400;
+}
+.mobile-btn:hover {
+  color: #23303e;
+  background-color: rgba(250, 212, 0, 0.3);
 }/*# sourceMappingURL=style.css.map */

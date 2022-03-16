@@ -67,7 +67,7 @@ nav {
 
 	background-color: v.$clr-white;
 	color: v.$clr-text-700;
-	transition: opacity 100ms ease-in-out;
+	transition: opacity 200ms ease-in-out;
 
 	@include m.breakpoint-up("hamburger") {
 		opacity: 0;
@@ -79,7 +79,7 @@ nav {
 	}
 
 	.mobile-nav__item {
-		cursor: pointer;
+		color: v.$clr-text-700;
 	}
 }
 .mobile-nav::before {
@@ -90,11 +90,12 @@ nav {
 	width: 1.75em;
 	height: 1.75em;
 	background-color: v.$clr-white;
-	clip-path: polygon(0 100%, 100% 100%, 100% 0);
+	clip-path: polygon(0 100%, 101% 100%, 100% 0);
 	transform: translateY(-100%);
 }
 .mobile-nav--closed {
 	opacity: 0;
+	z-index: -1;
 }
 
 // HERO

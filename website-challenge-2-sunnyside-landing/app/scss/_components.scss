@@ -67,4 +67,9 @@
 .mobile-btn {
 	@extend .btn;
 	background-color: v.$clr-primary-yellow;
+
+	&:hover {
+		color: v.$clr-text-900;
+		background-color: v.$clr-navbtn-mobile-hover-bg;
+	}
 }
