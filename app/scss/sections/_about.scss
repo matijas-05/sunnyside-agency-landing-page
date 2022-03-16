@@ -69,19 +69,19 @@
 
 // MISSION
 #about__design {
-	background-image: url(/images/desktop/image-graphic-design.jpg);
+	background-image: url(/website-challenges/images/desktop/image-graphic-design.jpg);
 	color: v.$clr-primary-dark-desaturated-cyan;
 	
 	@include m.breakpoint-down("mission") {
-		background-image: url(/images/mobile/image-graphic-design.jpg);
+		background-image: url(/website-challenges/images/mobile/image-graphic-design.jpg);
 	}
 }
 #about__photography {
-	background-image: url(/images/desktop/image-photography.jpg);
+	background-image: url(/website-challenges/images/desktop/image-photography.jpg);
 	color: v.$clr-primary-dark-blue;
 
 	@include m.breakpoint-down("mission") {
-		background-image: url(/images/mobile/image-photography.jpg);
+		background-image: url(/website-challenges/images/mobile/image-photography.jpg);
 	}
 }
 .about__mission {
