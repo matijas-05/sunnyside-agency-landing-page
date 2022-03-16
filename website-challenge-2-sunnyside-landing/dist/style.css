@@ -247,7 +247,7 @@ nav {
 .about__mission > h3 {
   font-size: 2rem;
   text-align: center;
-  margin-bottom: 2vw;
+  margin-bottom: 2.22vw;
 }
 @media (max-width: 68.75rem) {
   .about__mission > h3 {
@@ -272,6 +272,7 @@ nav {
 @media (max-width: 68.75rem) {
   .about__mission > p {
     font-size: 1.64vw;
+    padding: 0 5vw;
   }
 }
 @media (max-width: 37.5rem) {
