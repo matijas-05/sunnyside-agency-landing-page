@@ -18,13 +18,13 @@ nav {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	padding: 2em;
 	margin-bottom: 3em;
+	padding: 2em;
 	gap: 3em;
 }
 .nav-item {
 	color: v.$clr-white;
-
+	
 	@include m.breakpoint-down("hamburger") {
 		display: none;
 	}
@@ -48,6 +48,53 @@ nav {
 	@include m.breakpoint-down("hamburger") {
 		display: block;
 	}
+}
+
+// MOBILE MENU
+.mobile-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(calc(50vw - 50%), 35%);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 8.53vw 0;
+	gap: 8.53vw;
+	width: calc(100vw - 2*8.53vw);
+
+	background-color: v.$clr-white;
+	color: v.$clr-text-700;
+	transition: opacity 100ms ease-in-out;
+
+	@include m.breakpoint-up("hamburger") {
+		opacity: 0;
+	}
+	@include m.breakpoint-up("about") {
+		padding: 3.125rem 0;
+		gap: 3.125rem;
+		width: 31.25rem;
+	}
+
+	.mobile-nav__item {
+		cursor: pointer;
+	}
+}
+.mobile-nav::before {
+	content: "";
+	position: absolute;
+	top: 1px;
+	right: 0;
+	width: 1.75em;
+	height: 1.75em;
+	background-color: v.$clr-white;
+	clip-path: polygon(0 100%, 100% 100%, 100% 0);
+	transform: translateY(-100%);
+}
+.mobile-nav--closed {
+	opacity: 0;
 }
 
 // HERO

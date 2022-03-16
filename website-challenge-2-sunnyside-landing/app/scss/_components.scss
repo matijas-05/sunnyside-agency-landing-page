@@ -64,3 +64,7 @@
 		text-decoration: none;
 	}
 }
+.mobile-btn {
+	@extend .btn;
+	background-color: v.$clr-primary-yellow;
+}

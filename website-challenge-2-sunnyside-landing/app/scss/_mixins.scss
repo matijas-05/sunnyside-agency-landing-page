@@ -1,4 +1,4 @@
-$breakpoints-down: (
+$breakpoints: (
 	"pc": 90rem,				// 1440px
 	"about-padding": 75rem,		// 1200px
 	"mission-text": 68.75rem,	// 1100px
@@ -11,12 +11,12 @@ $breakpoints-down: (
 	"mobile": 23.4375rem);		// 375px
 
 @mixin breakpoint-down($breakpoint) {
-	@media (max-width: map-get($breakpoints-down, $breakpoint)) {
+	@media (max-width: map-get($breakpoints, $breakpoint)) {
 		@content;
 	}
 }
 @mixin breakpoint-up($breakpoint) {
-	@media (min-width: map-get($breakpoints-down, $breakpoint)) {
+	@media (min-width: map-get($breakpoints, $breakpoint)) {
 		@content;
 	}
 }
