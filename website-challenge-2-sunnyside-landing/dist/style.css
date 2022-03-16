@@ -277,20 +277,20 @@ nav {
   }
 }
 .about__mission > p {
-  text-align: center;
-  padding: 0 10vw;
+  padding: 0 11vw;
   margin-bottom: 2.67vw;
+  text-align: center;
 }
 @media (min-width: 90rem) {
   .about__mission > p {
-    padding: 0 9rem;
+    padding: 0 10rem;
     margin-bottom: 2.4rem;
   }
 }
 @media (max-width: 68.75rem) {
   .about__mission > p {
     font-size: 1.64vw;
-    padding: 0 5vw;
+    padding: 0 6vw;
   }
 }
 @media (max-width: 37.5rem) {
