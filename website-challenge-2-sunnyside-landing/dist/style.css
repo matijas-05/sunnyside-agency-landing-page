@@ -103,6 +103,11 @@ nav {
   align-items: center;
   gap: 7.5vw;
 }
+@media (min-width: 90rem) {
+  #hero {
+    gap: 6.75rem;
+  }
+}
 @media (max-width: 31.25rem) {
   #hero {
     gap: 12vw;
@@ -160,8 +165,7 @@ nav {
   .about__desc {
     align-items: center;
     text-align: center;
-    padding-top: 4em;
-    padding-bottom: 4em;
+    padding: 10.66vw;
   }
 }
 .about__desc > h2 {
@@ -175,7 +179,7 @@ nav {
 }
 @media (max-width: 37.5rem) {
   .about__desc > h2 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 }
 .about__desc > p {
@@ -216,7 +220,6 @@ nav {
 
 #about__design {
   background-image: url(/images/desktop/image-graphic-design.jpg);
-  background-size: contain;
   color: #25564b;
 }
 @media (max-width: 25rem) {
@@ -240,7 +243,6 @@ nav {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background-repeat: no-repeat;
   background-size: contain;
   aspect-ratio: 6/5;
 }
@@ -309,7 +311,7 @@ nav {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 8em;
+  padding: 8.89vw;
 }
 #clients > h4 {
   color: #a7abae;

@@ -5,6 +5,7 @@
 #about {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	
 	@include m.breakpoint-down("about") {
 		grid-template-columns: 1fr;
 	}
@@ -25,8 +26,7 @@
 	@include m.breakpoint-down("about") {
 		align-items: center;
 		text-align: center;
-		padding-top: 4em;
-		padding-bottom: 4em;
+		padding: 10.66vw;
 	}
 
 	> h2 {
@@ -37,7 +37,7 @@
 			font-size: 4.17vw;
 		}
 		@include m.breakpoint-down("about") {
-			font-size: 2.5rem;
+			font-size: 2.25rem;
 		}
 	}
 	> p {
@@ -70,7 +70,6 @@
 // MISSION
 #about__design {
 	background-image: url(/images/desktop/image-graphic-design.jpg);
-	background-size: contain;
 	color: v.$clr-primary-dark-desaturated-cyan;
 	
 	@include m.breakpoint-down("mission") {
@@ -91,7 +90,6 @@
 	justify-content: flex-end;
 	align-items: center;
 
-	background-repeat: no-repeat;
 	background-size: contain;
 	aspect-ratio: 6/5;
 

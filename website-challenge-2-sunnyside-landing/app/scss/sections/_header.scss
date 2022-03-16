@@ -57,6 +57,9 @@ nav {
 	align-items: center;
 	gap: 7.5vw;
 
+	@include m.breakpoint-up("pc") {
+		gap: 6.75rem;
+	}
 	@include m.breakpoint-down("hero") {
 		gap: 12vw;
 	}
