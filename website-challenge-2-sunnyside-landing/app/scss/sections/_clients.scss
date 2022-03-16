@@ -1,0 +1,60 @@
+@use "../variables" as v;
+@use "../mixins" as m;
+
+// CLIENTS
+#clients {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 7vw;
+	
+	@include m.breakpoint-up("pc") {
+		padding: 6.25em;
+	}
+	@include m.breakpoint-down("hamburger") {
+		padding: 4em 2em;
+	}
+
+	> h4 {
+		color: v.$clr-text-grayish-blue;
+		font-size: 1.25rem;
+		letter-spacing: 0.4ch;
+		margin-bottom: 4em;
+	}
+	> div {
+		display: flex;
+		justify-content: center;
+		gap: 2em;
+		
+		@include m.breakpoint-down("hamburger") {
+			flex-direction: column;
+			gap: 4em;
+		}
+	}
+}
+.clients__client {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4em;
+
+	> img {
+		width: 5em;
+		border-radius: 50%;
+	}
+	> p {
+		color: v.$clr-text-very-dark-grayish-blue;
+	}
+
+	&__signature > h4 {
+		font-size: 1.125rem;
+		color: v.$clr-text-900;
+		margin-bottom: 0.5em;
+	}
+	&__signature > p {
+		font-size: 0.85rem;
+		color: v.$clr-text-grayish-blue;
+		margin-bottom: 2em;
+	}
+}

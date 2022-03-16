@@ -1,0 +1,21 @@
+@use "../mixins" as m;
+
+// GALLERY
+#gallery {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	@include m.breakpoint-down("gallery") {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+.gallery-pc {
+	@include m.breakpoint-down("gallery") {
+		display: none;
+	}
+}
+.gallery-mobile {
+	display: none;
+	@include m.breakpoint-down("gallery") {
+		display: block;
+	}
+}
