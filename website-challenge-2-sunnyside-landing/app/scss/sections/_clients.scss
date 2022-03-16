@@ -1,14 +1,21 @@
 @use "../variables" as v;
 @use "../mixins" as m;
 
-/* CLIENTS */
+// CLIENTS
 #clients {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	padding: 8.89vw;
+	padding: 7vw;
 	
+	@include m.breakpoint-up("pc") {
+		padding: 6.25em;
+	}
+	@include m.breakpoint-down("hamburger") {
+		padding: 4em 2em;
+	}
+
 	> h4 {
 		color: v.$clr-text-grayish-blue;
 		font-size: 1.25rem;
@@ -24,10 +31,6 @@
 			flex-direction: column;
 			gap: 4em;
 		}
-	}
-
-	@include m.breakpoint-down("hamburger") {
-		padding: 4em 2em;
 	}
 }
 .clients__client {
