@@ -146,6 +146,11 @@ nav {
   gap: 1.5em;
   padding: 7.5vw;
 }
+@media (min-width: 90rem) {
+  .about__desc {
+    padding: 6.75rem;
+  }
+}
 @media (max-width: 75rem) {
   .about__desc {
     padding: 2.9vw;
@@ -249,6 +254,11 @@ nav {
   text-align: center;
   margin-bottom: 2.22vw;
 }
+@media (min-width: 90rem) {
+  .about__mission > h3 {
+    margin-bottom: 2rem;
+  }
+}
 @media (max-width: 68.75rem) {
   .about__mission > h3 {
     font-size: 2.91vw;
@@ -268,6 +278,12 @@ nav {
   text-align: center;
   padding: 0 10vw;
   margin-bottom: 2.67vw;
+}
+@media (min-width: 90rem) {
+  .about__mission > p {
+    padding: 0 9rem;
+    margin-bottom: 2.4rem;
+  }
 }
 @media (max-width: 68.75rem) {
   .about__mission > p {
