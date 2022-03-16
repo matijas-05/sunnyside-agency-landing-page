@@ -64,8 +64,9 @@
 		text-decoration: none;
 	}
 }
-.mobile-btn {
+.btn--yellow {
 	@extend .btn;
+	color: v.$clr-text-900 !important;
 	background-color: v.$clr-primary-yellow;
 
 	&:hover {

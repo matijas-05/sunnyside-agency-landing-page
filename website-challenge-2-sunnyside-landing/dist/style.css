@@ -521,7 +521,7 @@ footer > img {
   background-color: #fe7867;
 }
 
-.btn, .mobile-btn {
+.btn, .btn--yellow {
   font-family: "Fraunces", serif;
   font-weight: 700;
   color: #23303e;
@@ -529,16 +529,17 @@ footer > img {
   padding: 1em 1.75em;
   border-radius: 2em;
 }
-.btn:hover, .mobile-btn:hover {
+.btn:hover, .btn--yellow:hover {
   color: white;
   background-color: rgba(255, 255, 255, 0.3);
   text-decoration: none;
 }
 
-.mobile-btn {
+.btn--yellow {
+  color: #23303e !important;
   background-color: #fad400;
 }
-.mobile-btn:hover {
+.btn--yellow:hover {
   color: #23303e;
   background-color: rgba(250, 212, 0, 0.3);
 }/*# sourceMappingURL=style.css.map */

@@ -6,6 +6,10 @@ function toggleMobileNav() {
 }
 
 window.addEventListener("click", e => {
-	if(mobileNavState && !e.target.classList.contains("mobile-nav") && !document.querySelector("#hamburger").contains(e.target))
+	if(!mobileNavState)
+		return;
+
+	const classList = e.target.classList;
+	if(!classList.contains("mobile-nav") && !classList.contains("mobile-nav__item") && !document.querySelector("#hamburger").contains(e.target))
 		toggleMobileNav();
 });
