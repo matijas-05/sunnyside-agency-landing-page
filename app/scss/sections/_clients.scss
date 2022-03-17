@@ -45,6 +45,13 @@
 	}
 	> p {
 		color: v.$clr-text-very-dark-grayish-blue;
+
+		@include m.breakpoint-down("about-text") {
+			font-size: 1.875vw;
+		}
+		@include m.breakpoint-down("hamburger") {
+			font-size: inherit;
+		}
 	}
 
 	&__signature > h4 {

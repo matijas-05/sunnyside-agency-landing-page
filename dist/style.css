@@ -403,6 +403,16 @@ nav {
 .clients__client > p {
   color: #5a636c;
 }
+@media (max-width: 60rem) {
+  .clients__client > p {
+    font-size: 1.875vw;
+  }
+}
+@media (max-width: 46.875rem) {
+  .clients__client > p {
+    font-size: inherit;
+  }
+}
 .clients__client__signature > h4 {
   font-size: 1.125rem;
   color: #23303e;
