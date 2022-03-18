@@ -33,13 +33,14 @@ nav {
 	margin-right: auto;
 	transform: translateY(10%);
 }
-#hamburger {
+.hamburger {
 	display: none;
 	width: 2em;
 	height: 2em;
 	background:url(../images/icon-hamburger.svg) no-repeat center;
 	background-size: contain;
 	border: 0;
+	transition: opacity v.$transition-time ease-in-out;
 
 	&:hover {
 		cursor: pointer;
@@ -67,7 +68,7 @@ nav {
 
 	background-color: v.$clr-white;
 	color: v.$clr-text-700;
-	transition: opacity 200ms ease-in-out;
+	transition: opacity v.$transition-time ease-in-out;
 
 	@include m.breakpoint-up("hamburger") {
 		opacity: 0;
