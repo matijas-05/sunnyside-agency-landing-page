@@ -77,19 +77,20 @@ nav {
   transform: translateY(10%);
 }
 
-#hamburger {
+.hamburger {
   display: none;
   width: 2em;
   height: 2em;
   background: url(../images/icon-hamburger.svg) no-repeat center;
   background-size: contain;
   border: 0;
+  transition: opacity 200ms ease-in-out;
 }
-#hamburger:hover {
+.hamburger:hover {
   cursor: pointer;
 }
 @media (max-width: 46.875rem) {
-  #hamburger {
+  .hamburger {
     display: block;
   }
 }
