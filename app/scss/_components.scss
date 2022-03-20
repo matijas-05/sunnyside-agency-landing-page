@@ -28,11 +28,12 @@
 
 	&::after {
 		content: "";
-		position: relative; // Make z-index work
+		position: relative;		// Make z-index work
 		width: 110%;
 		height: 0.65em;
 		border-radius: 1em;
 		filter: opacity(0.25);
+		transition: filter v.$transition-time ease-in-out;
 		transform: translateY(-80%);
 		z-index: -1;
 	}
@@ -61,7 +62,6 @@
 	&:hover {
 		color: v.$clr-white;
 		background-color: v.$clr-navbtn-hover-bg;
-		text-decoration: none;
 	}
 }
 .btn--yellow {
