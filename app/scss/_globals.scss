@@ -28,7 +28,9 @@ a {
 	font-family: "Barlow", sans-serif;
 	font-size: 1.125rem;
 	text-decoration: none;
-	transition: all v.$transition-time ease-in-out;
+	transition: background-color v.$transition-time ease-in-out,
+				color v.$transition-time ease-in-out,
+				filter v.$transition-time ease-in-out;
 }
 img {
 	max-width: 100%;

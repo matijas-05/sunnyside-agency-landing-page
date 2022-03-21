@@ -69,9 +69,10 @@ nav {
 	background-color: v.$clr-white;
 	color: v.$clr-text-700;
 	transition: opacity v.$transition-time ease-in-out;
+	opacity: 0;
 
-	@include m.breakpoint-up("hamburger") {
-		opacity: 0;
+	@include m.breakpoint-down("hamburger") {
+		opacity: 1;
 	}
 	@include m.breakpoint-up("about") {
 		padding: 3.125rem 0;
